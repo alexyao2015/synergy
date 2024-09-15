@@ -25,7 +25,7 @@ env:
   SYNERGY_LICENSED_PRODUCT: ${{ vars.SYNERGY_LICENSED_PRODUCT }}
   SYNERGY_ENABLE_ACTIVATION: ${{ vars.SYNERGY_ENABLE_ACTIVATION }}
   PACKAGE_BUILD: ${{ !github.event.pull_request.draft }}
-  PACKAGE_UPLOAD: ${{ !github.event.pull_request.draft && github.ref_name != 'master' }}
+  PACKAGE_UPLOAD: true
   UPLOAD_TO_GITHUB: true
   UPLOAD_TO_GDRIVE: false
 
